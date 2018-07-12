@@ -39,7 +39,7 @@ namespace ChatterBot02
         static string FindMatch(string str)
         {
             string result = "";
-            for (int i = 0; i < KnowledgeBase.GetUpperBound(0); ++i)
+            for (int i = 0; i <= KnowledgeBase.GetUpperBound(0); ++i)
             {
                 if (KnowledgeBase[i, 0].Equals(str))
                 {
